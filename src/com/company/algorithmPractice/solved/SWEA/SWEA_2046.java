@@ -10,7 +10,13 @@ public class SWEA_2046 {
 
         int num = Integer.parseInt(br.readLine());
 
-        System.out.println("#".repeat(Math.max(0, num)));
+        // System.out.println("#".repeat(Math.max(0, num)));
+        // String.repeat은 java11에 새로 생긴 문법
+
+        // java8 기준
+        for(int i=0; i<num; ++i){
+            System.out.print("#");
+        }
 
     }
 }
